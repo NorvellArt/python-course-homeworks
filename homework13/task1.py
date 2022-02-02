@@ -1,4 +1,4 @@
-import math
+import geometry
 
 
 def figure_func(figure, **kwargs):
@@ -9,7 +9,7 @@ def figure_func(figure, **kwargs):
     elif figure == 'trapezoid':
         s = ((kwargs['a'] + kwargs['b']) * kwargs['h']) / 2
     elif figure == 'circle':
-        s = (math.pi * kwargs['r'] ** 2)
+        s = (geometry.pi * kwargs['r'] ** 2)
     else:
         return 'invalid data'
     return s

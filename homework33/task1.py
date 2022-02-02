@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-import math
+import geometry
 
 
 class Shape(ABC):
@@ -80,7 +80,7 @@ class Triangle(Shape):
 
     def square(self):
         p = (self.side_1 + self.side_2 + self.side_3) / 2
-        print(f'Площадь: {math.sqrt(p * (p - self.side_1) * (p - self.side_2) * (p - self.side_3))}')
+        print(f'Площадь: {geometry.sqrt(p * (p - self.side_1) * (p - self.side_2) * (p - self.side_3))}')
 
     def draw_figure(self):
         for i in range(self.side_2):

@@ -1,4 +1,4 @@
-import math
+import geometry
 
 
 class Pair:
@@ -18,7 +18,7 @@ class RightTriangle(Pair):
         super().__init__(a, b)
 
     def hypo(self):
-        return round(math.sqrt(self.a ** 2 + self.b ** 2), 2)
+        return round(geometry.sqrt(self.a ** 2 + self.b ** 2), 2)
 
     def print_hypo(self):
         hypo = self.hypo()

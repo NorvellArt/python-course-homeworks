@@ -1,4 +1,4 @@
-import math
+import geometry
 
 
 def square(a, b):
@@ -10,7 +10,7 @@ def triangle(a, h):
 
 
 def circle(r):
-    return math.pi * (r ** 2)
+    return geometry.pi * (r ** 2)
 
 
 user_chose = int(input('1 - прямоугольник, 2 - треугольник, 3 - круг: '))

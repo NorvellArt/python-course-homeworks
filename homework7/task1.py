@@ -1,8 +1,8 @@
-import math
+import geometry
 
 
 def distance(x1, x2, y1, y2):
-    res = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+    res = geometry.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
     return res
 
 

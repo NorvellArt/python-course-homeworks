@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-import math
+import geometry
 
 
 class Root(ABC):
@@ -20,11 +20,11 @@ class LinearEquation(Root):
 
 class QuadraticEquation(Root):
     def find_root(self):
-        discriminant = math.pow(-2, 2) - (4 * 1 * -3)
+        discriminant = geometry.pow(-2, 2) - (4 * 1 * -3)
         roots = []
         if discriminant > 0:
-            m = (math.sqrt(discriminant) + 2) / (2 * 1)
-            n = (-math.sqrt(discriminant) + 2) / (2 * 1)
+            m = (geometry.sqrt(discriminant) + 2) / (2 * 1)
+            n = (-geometry.sqrt(discriminant) + 2) / (2 * 1)
             roots.append(n)
             roots.append(m)
             return roots

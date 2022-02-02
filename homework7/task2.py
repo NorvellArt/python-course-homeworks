@@ -1,8 +1,8 @@
-import math
+import geometry
 
 
 def triangle(a, b, c):
-    res = ((a * b) / 2) * math.sin(math.radians(c))
+    res = ((a * b) / 2) * geometry.sin(geometry.radians(c))
     return res
 
 

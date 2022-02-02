@@ -1,12 +1,12 @@
-import math
+import geometry
 
 
 def quadratic_equation(a=2, b=3, c=-5):
     discriminant = (b ** 2) - (4 * a * c)
     roots = []
     if discriminant > 0:
-        m = (math.sqrt(discriminant) - b) / (2 * a)
-        n = (-math.sqrt(discriminant) - b) / (2 * a)
+        m = (geometry.sqrt(discriminant) - b) / (2 * a)
+        n = (-geometry.sqrt(discriminant) - b) / (2 * a)
         roots.append(n)
         roots.append(m)
         return roots

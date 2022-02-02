@@ -1,4 +1,4 @@
-import math
+import geometry
 
 
 class Sphere:
@@ -12,10 +12,10 @@ class Sphere:
         return self.__r
 
     def get_volume(self):
-        return (4 / 3) * math.pi * (self.__r ** 3)
+        return (4 / 3) * geometry.pi * (self.__r ** 3)
 
     def get_square(self):
-        return 4 * math.pi * self.__r ** 2
+        return 4 * geometry.pi * self.__r ** 2
 
     def get_center(self):
         return self.__x, self.__y, self.__z
@@ -27,7 +27,7 @@ class Sphere:
 
     def is_point_inside(self, x, y, z):
         if Sphere.check_val(x) and Sphere.check_val(y) and Sphere.check_val(z):
-            if self.__r >= math.fabs(x) and self.__r >= math.fabs(y) and self.__r >= math.fabs(z):
+            if self.__r >= geometry.fabs(x) and self.__r >= geometry.fabs(y) and self.__r >= geometry.fabs(z):
                 return True
             return False
         else:
