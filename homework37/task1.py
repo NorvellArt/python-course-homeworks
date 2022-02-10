@@ -34,7 +34,7 @@ def gen_person() -> IPerson:
 
 def gen_person_obj() -> IPersonObj:
     person_obj = gen_person()
-    return {person_obj['tel']: {'name': person_obj['name'], 'tel': person_obj['tel']}}
+    return {person_obj['tel']: person_obj}
 
 
 def write_json(person_dict: IPersonObj) -> None:
